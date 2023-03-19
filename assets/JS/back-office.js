@@ -5,3 +5,15 @@ const auth = {
         'Autorization': `Bearer ${key}`,
     },
 };
+
+const Save = async (event) => {
+    event.preventDefault();
+
+    const newArt = {
+        name: document.getElementById("name").value,
+        brand: document.getElementById("brand").value,
+        description: document.getElementById("descrizione").value,
+        imageUrl: document.getElementById("imageUrl").value,
+        price: document.getElementById("prezzo").value
+    }
+}
